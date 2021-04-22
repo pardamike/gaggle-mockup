@@ -1,0 +1,60 @@
+@import '~@angular/material/theming';
+
+mat-form-field {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mat-form-field-appearance-fill {
+    .mat-form-field-flex {
+        padding: 0.25em 0.5em !important;
+        background-color: #FFFFFF;
+        border-radius: 5px !important;
+        @include mat-elevation(2);
+    }
+    .mat-form-field-infix {
+        padding: 0.25em 0 !important;
+
+        input {
+            padding: 0 0.1em;
+        }
+    }
+}
+
+.mat-form-field-underline {
+    bottom: 1.45em;
+    padding-left: 3%;
+    width: 90% !important;
+}
+
+.mat-form-field-ripple {
+    margin-left: 3%;
+}
+
+button.mat-raised-button {
+    padding: 0 1.7rem;
+    line-height: 2.2em;
+}
+
+.mat-dialog-container {
+    padding: 0 0.5em 0.5em 0.5em !important;
+    overflow: hidden !important;
+}
+
+.mat-dialog-actions {
+    justify-content: space-between;
+    margin-bottom: -10px !important;
+    padding: 0 !important;
+}
+
+.mat-dialog-content {
+    padding: 0.5em 3em !important;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.app-large-checkbox .mat-checkbox-inner-container {
+    height: 24px !important;
+    width: 24px !important;
+}

@@ -1,6 +1,6 @@
 # Gaggle Mockup
 
-Live Demo Here
+[Live Demo Here](https://pardamike.github.io/gaggle-mockup/)
 
 ## Notes
 - Using Angular Material
@@ -14,6 +14,6 @@ To log in, simply fill out the username and password with annything, then click 
 To register, simply fill out the registration form, submit, and you will be "logged in".
 
 ## Installation Steps
-- Clone `git clone `
+- Clone `git clone https://github.com/pardamike/gaggle-mockup.git`
 - Install `npm install`
 - Run `ng serve --open`

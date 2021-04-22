@@ -1,0 +1,60 @@
+@import './material-overrides.scss';
+
+html {
+    background-color: #F2F2F2;
+    font-size: 16px;
+}
+
+.container {
+    padding: 1em;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    margin: 0.25em;
+}
+
+@media (max-width: 900px) {
+    .row {
+        display: block;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.divider {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: lighten(#000000, 80);
+    padding-bottom: 0.25em;
+}
+
+.tiny-icon {
+    height: 1em !important;
+    width: 1em !important;
+    font-size: 1em !important;
+    font-weight: 900;
+}
+
+app-home {
+    width: 100% !important;
+}
