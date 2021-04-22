@@ -1,0 +1,29 @@
+mat-toolbar.dashboard-home-header {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    min-height: 2em;
+    height: auto;
+    padding-top: 0.25em;
+    background-color: #e8e8e8;
+
+    .app-large-checkbox {
+        margin-right: 2em;
+    }
+
+    .app-home-header-label {
+        font-size: 0.75em !important;
+        font-weight: 800;
+        color: rgba(0,0,0,0.70);
+    }
+
+    .app-header-column-one {
+        width: 20%;
+    }
+
+    .app-header-column-two {
+        width: 10%;
+    }
+
+    .divider {
+        padding-right: 20%;
+    }
+}

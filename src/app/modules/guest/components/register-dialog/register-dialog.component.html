@@ -1,0 +1,43 @@
+<form [formGroup]="registerForm" (submit)="submit()">
+  <div mat-dialog-content>
+    <h3>New Account</h3>
+    <div class="row">
+      <div class="col w-100">
+        <mat-form-field appearance="fill" floatLabel="always">
+          <mat-label>Username</mat-label>
+          <input matInput type="text" formControlName="username" cdkFocusInitial>
+          <mat-error *ngIf="registerForm.controls.username.touched && registerForm.controls.username.invalid">
+            <span>Please enter a username</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col w-100">
+        <mat-form-field appearance="fill" floatLabel="always">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <mat-error *ngIf="registerForm.controls.password.touched && registerForm.controls.password.invalid">
+            <span>Please enter a password</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col w-100">
+        <mat-form-field appearance="fill" floatLabel="always">
+          <mat-label>Email</mat-label>
+          <input matInput type="text" formControlName="email">
+          <mat-error *ngIf="registerForm.controls.email.touched && registerForm.controls.email.invalid">
+            <span>Please enter a valid email</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="cancel()">Cancel</button>
+    <button mat-button color="primary" type="submit">Register Account</button>
+  </div>
+</form>

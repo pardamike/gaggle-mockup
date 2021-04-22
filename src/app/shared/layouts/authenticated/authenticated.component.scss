@@ -1,0 +1,61 @@
+mat-toolbar {
+    background-color: #e8e8e8;
+    border-bottom: 1px solid lightgray;
+    padding: 0 0.25em 0.25em 0.25em;
+    flex-wrap: wrap;
+    min-height: 4em;
+    height: auto;
+}
+
+.app-toolbar-icon {
+    color: #BEBDBD;
+    font-size: 2.5em;
+    height: initial;
+    width: initial;
+}
+
+.main-app {
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+.app-toolbar-action-button-label {
+    font-size: 0.5em;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: initial;
+    padding-top: 0.5em;
+}
+
+.app-toolbar-actions-wrapper {
+    width: 100%;
+    padding: 0.5em 0.5em 0 0.5em;
+    justify-content: space-between;
+}
+
+.app-toolbar-action-wrapper {
+    input {
+        border-radius: 0.25em;
+        border: none;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 30%);
+        line-height: 2em;
+        padding-left: 7.5em;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.app-toolbar-action-button {
+    padding: 0 0.5rem;
+    line-height: 2em;
+    min-width: auto;
+    font-weight: bold;
+    margin: 0 0.5em;
+}
+
+.input-icon {
+    position: absolute;
+    margin: 0.3em 3em;
+}

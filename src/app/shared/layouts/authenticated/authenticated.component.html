@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <mat-icon class="app-toolbar-icon">apps</mat-icon>
+  <img src="./../../../../assets/img/gaggle-logo.svg" alt="Gaggle logo" />
+  <div class="app-toolbar-actions-wrapper flex">
+    <div class="flex">
+      <div class="app-toolbar-action-wrapper">
+        <button mat-raised-button class="app-toolbar-action-button">
+          <mat-icon>search</mat-icon><mat-icon class="tiny-icon">chevron_right</mat-icon>
+        </button>
+        <div class="app-toolbar-action-button-label">Button 1</div>
+      </div>
+      <div class="app-toolbar-action-wrapper">
+        <button mat-raised-button class="app-toolbar-action-button">
+          <mat-icon fontSet="material-icons-outlined">cloud_upload</mat-icon><mat-icon class="tiny-icon">chevron_right</mat-icon>
+        </button>
+        <div class="app-toolbar-action-button-label">Button 2</div>
+      </div>
+      <div class="app-toolbar-action-wrapper">
+        <button mat-raised-button class="app-toolbar-action-button">
+          <mat-icon fontSet="material-icons-outlined">receipt_long</mat-icon><mat-icon class="tiny-icon">chevron_right</mat-icon>
+        </button>
+        <div class="app-toolbar-action-button-label">Button 3</div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="app-toolbar-action-wrapper">
+        <mat-icon class="input-icon">filter_alt</mat-icon>
+        <input type="text" placeholder="Find...">
+        <div class="app-toolbar-action-button-label">Filter by Keyword</div>
+      </div>
+      <div class="app-toolbar-action-wrapper">
+        <button mat-raised-button class="app-toolbar-action-button">
+          <mat-icon>file_download</mat-icon><mat-icon class="tiny-icon">expand_more</mat-icon>
+        </button>
+        <div class="app-toolbar-action-button-label">Export</div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+<div class="main-app flex">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,13 @@
+.input-container {
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1.5em;
+    padding-top: 30%;
+}
+
+@media(max-width: 500px) {
+    .input-container {
+        width: 70%;
+    }
+}

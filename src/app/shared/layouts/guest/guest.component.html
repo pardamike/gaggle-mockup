@@ -1,0 +1,15 @@
+<div class="row text-center">
+  <div class="col">
+    <div class="text-left guest-logo-wrapper">
+      <img src="./../../../../assets/img/gaggle-logo.svg" alt="Gaggle logo" />
+    </div>
+    <router-outlet></router-outlet>
+    <br />
+    <div class="guest-footer">
+      <button mat-button color="primary" (click)="registerDialog()">Register</button>
+      <span class="divider">|</span>
+      <a mat-button color="primary" routerLink="/unauth/guest/forgot-password">Forgot Password</a>
+    </div>
+  </div>
+  <div class="col guest-hero-bg" [style.height.px]="windowHeight"></div>
+</div>
